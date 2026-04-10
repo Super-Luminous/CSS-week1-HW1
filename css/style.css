@@ -1,115 +1,95 @@
 
-/* CSS, Week 2 homework assingment */
-
-:root
-{
---mich-primary-colour: #18453B;
---mich-accent-colour: #F0F70F;
---text-background-colour: #d3d3d3;
-}
-
-/* ----- Classes ----- */
-
-.textArea
-{
-  margin-top: 20px;
-}
-
-.picture-grid
-{
-  display: grid;
-  grid-template-columns: 40% 40%;
-  justify-content:space-around;
-  align-items: center;
-  row-gap: 20px;
-  background-color: var(--mich-primary-colour);
-}
-
-.picture-grid img
-{
-  width: 100%;
-}
-
-.picture-flex
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: var(--mich-primary-colour);
-}
-
-.picture-flex img
-{
-  width: 240px;
-}
-
-/* ----- End of Classes ----- */
-
-header
-{
-  background-color: var(--text-background-colour);
-  padding-bottom: 1%;
-  margin: 10px;
-}
-
-/* only applies to the image in the header (Nav area) */
-header img
-{
-  width: 10%;
-  position: relative;
-  top: 20px;
-}
-
-/* Follow guide in home work assingment for nav, left BG white for accessability */
 nav
 {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  display: inline-block;
-
-  width: 80%;
+  align-content: center;
+  text-align: center;
+  background-color: #F0F70F;
+  margin-bottom: 10px;
 }
 
-/* list of links in the nav container */
-nav ul
+/* List is containter for site links */
+ul
 {
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
   list-style: none;
 }
 
-/* individual list items. 
+/* individual list items. */
 li
 {
   display: inline;
   width: 300px;
 }
-*/
 
 body
 {
   font-family:'Segoe UI', Arial, Helvetica, sans-serif;
   font-size: 150%;
+  align-content: center;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+/* header is used as the container for the title text & title image */
+header
+{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #F0F70F;
+  background-color: #18453B ;
+  padding-bottom: 5px;
 }
 
 h1
 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 250%;
-  text-align: center;
-  color: var(--mich-accent-colour);
-  background-color: var(--mich-primary-colour);
-  width: 70%;
-  margin: auto;
+  font:bold;
+  font-size: 300%;
+}
+
+main
+{
+  color: black;
+  background-color: #18453B ;
+  text-align: left;
+  font-size: 125%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* For the main paragraph, leave the background white with black text, for high contrast, which improves accesability. */
 p
 {
-  margin: auto 10px;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  margin: auto 15px;
   line-height: 40px;
-  background-color: var(--text-background-colour);
-  padding: 15px;
 }
 
+/* div is used as the container for the images */
+div
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 1%;
+  margin: 15px;
+}
 
+/* Make the images bigger and have a margin for better visibilty & accesability */
+img
+{
+ width: 240px;
+ margin: 5px;
+}
 
+footer
+{
+  background-color: rgb(24,69,59);
+  padding: 15px;
+  margin-bottom: 20px;
+}
